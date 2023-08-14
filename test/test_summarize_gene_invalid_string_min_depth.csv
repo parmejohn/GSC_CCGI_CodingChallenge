@@ -1,0 +1,3 @@
+patient_id,Gene,Number.of.Sites,Minimum.Depth
+p1,gene1,1,no
+p2,gene2,1,2
