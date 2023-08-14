@@ -1,2 +1,17 @@
-# GSC_CCGI_CodingChallenge
-Takes less low coverage file and a sample identifier, and outputs the minimum coverage and total bases affected per gene
+# GSC CCGI Coding Challenge
+Takes a low coverage file and a sample identifier, and outputs the minimum coverage and total bases affected per gene
+
+## Dependencies
+python3 >= 3.7.6
+
+## Usage
+```
+python3 /path_to_directory/main.py [low_coverage_file.csv] [sample_id]
+```
+Ensure that the low_coverage_file contains a 'patient_id', 'Minimum.Depth', and 'Number.of.Sites' columns. 'Minimum.Depth' and 'Number.of.Sites' should be whole integer values.
+
+## Unit tests
+To run unit tests
+```
+python -m unittest discover /path_to_directory/GSC_CCGI_CodingChallenge/test
+```
